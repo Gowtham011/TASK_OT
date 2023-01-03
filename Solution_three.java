@@ -5,19 +5,19 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths; 
 public class Solution_three {
-//	public static void moveFile(String src, String dest ) {
-//        Path result = null;
-//        try {
-//           result = Files.move(Paths.get(src), Paths.get(dest));
-//        } catch (IOException e) {
-//           System.out.println("Exception while moving file: " + e.getMessage());
-//        }
-//        if(result != null) {
-//           System.out.println("File moved successfully.");
-//        }else{
-//           System.out.println("File movement failed.");
-//        }
-//     }
+	public static void moveFile(String src, String dest ) {
+       Path result = null;
+       try {
+          result = Files.move(Paths.get(src), Paths.get(dest));
+       } catch (IOException e) {
+          System.out.println("Exception while moving file: " + e.getMessage());
+       }
+       if(result != null) {
+          System.out.println("File moved successfully.");
+       }else{
+          System.out.println("File movement failed.");
+       }
+    }
 
 	public static void main(String[] args) {
 	 
@@ -26,12 +26,15 @@ public class Solution_three {
 	  System.out.println("-----------------");
 	  File folder=new File("C:\\Users\\gowthamd\\Desktop\\Task");
 	  sc.getFileType(folder,"txt");
+	  moveFile("C:\\Users\\gowthamd\\Desktop\\Task","C:\\Users\\gowthamd\\Desktop\\Task two");
 	  System.out.println("Images");
 	  System.out.println("-----------------");
 	  sc.getFileType(folder,"png");
+	  moveFile("C:\\Users\\gowthamd\\Desktop\\Task","C:\\Users\\gowthamd\\Desktop\\Task two");
 	  System.out.println("-----------------");
 	  System.out.println("-----------------");
 	  sc.getFileType(folder,"mp4");
+	  moveFile("C:\\Users\\gowthamd\\Desktop\\Task","C:\\Users\\gowthamd\\Desktop\\Task two");
 	  System.out.println("-----------------");
 	}
 	 
